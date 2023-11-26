@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Matthieu Roman</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                width: 100%;
+                text-align: left;
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .response {
+                display: none;
+            }
+
+            .response.active {
+                display: block;
+            }
+
+            .scroll-btns {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            .scroll-btn {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="response active" id="response1">
+                <h1>Question 1</h1>
+                <p>
+                    <i>
+                        Votre entreprise a décidé d&apos;acquérir une solution SaaS pour son portail de statistiques. Vous devez rédiger dans l’appel d’offres la partie
+                        sur les exigences techniques en termes de sobriété numérique. Voici quelques critères non négociables sous forme de user stories fictives :
+                    </i>
+                </p>
+
+                <ul>
+                    <li>
+                        En tant qu'utilisateur, je veux que le portail de statistiques limite l'utilisation des ressources serveur pour garantir une empreinte carbone
+                        minimale, en favorisant l'efficacité énergétique des serveurs.
+                    </li>
+                    <li>
+                        En tant qu'administrateur système, je veux que la solution SaaS suive les meilleures pratiques en matière de gestion des ressources pour minimiser
+                        la consommation de bande passante et optimiser le temps de chargement des pages.
+                    </li>
+                    <li>
+                        En tant qu'utilisateur, je veux que la solution utilise des mécanismes de mise en cache efficaces pour réduire le besoin de requêtes fréquentes au
+                        serveur, améliorant ainsi les performances tout en économisant des ressources.
+                    </li>
+                    <li>
+                        En tant qu'administrateur de la sécurité, je veux que la solution garantisse une protection robuste contre les attaques potentielles, minimisant
+                        ainsi les besoins en ressources liés à la défense contre les cybermenaces.
+                    </li>
+                    <li>
+                        En tant qu'utilisateur final, je veux que la solution intègre des fonctionnalités de suivi de la consommation énergétique pour que l'entreprise
+                        puisse évaluer et réduire son empreinte carbone liée à l'utilisation du portail de statistiques.
+                    </li>
+                </ul>
+            </div>
+            <div class="response" id="response2">
+                <h1>Question 2</h1>
+                <p>
+                    <i>
+                        Quels éléments du cours allez-vous utiliser dans votre alternance (pour les personnes qui ont trouvé) et/ou votre vie étudiante (pour les
+                        personnes en recherche) ?
+                    </i>
+                </p>
+            </div>
+            <div class="response" id="response3">
+                <h1>Question 3</h1>
+                <p>
+                    <i>
+                        Comment évaluez-vous la maturité de sobriété numérique de votre organisation ? (ou d&apos;une autre organisation si pas encore d&apos;alternance).
+                        Détaillez les actions déjà mises en œuvre et ce qu&apos;il faudrait selon vous améliorer.
+                    </i>
+                </p>
+                <ul>
+                    <li>
+                        <strong><u>Audit Énergétique :</u></strong> Ma société a réalisé un audit énergétique pour évaluer la consommation énergétique de son
+                        infrastructure informatique, y compris les centres de données, les serveurs et les équipements réseau.
+                    </li>
+                    <li>
+                        <strong><u>Virtualisation et Consolidation :</u></strong> Elle a pu mettre en place des technologies de virtualisation pour optimiser
+                        l'utilisation des serveurs, réduire le nombre d'équipements physiques et diminuer la consommation énergétique.
+                    </li>
+                    <li>
+                        <strong><u>Utilisation de Services Cloud :</u></strong> La transition vers des services cloud peut être une initiative pour externaliser certains
+                        services et optimiser les ressources, permettant une meilleure élasticité et une consommation plus efficace.
+                    </li>
+                    <li>
+                        <strong><u>Développement Responsable :</u></strong> L'organisation a peut-être intégré des pratiques de développement durable, telles que
+                        l'optimisation du code, la mise en cache des données, et l'utilisation de bibliothèques ou frameworks économes en ressources.
+                    </li>
+                    <li>
+                        <strong
+                            ><ul>
+                                Politique d'Achats Durables :
+                            </ul></strong
+                        >
+                        Elle a peut-être adopté une politique d'achats responsables en favorisant les équipements et services écoresponsables, et en intégrant des
+                        critères de sobriété numérique dans les appels d'offres.
+                    </li>
+                    <li>
+                        <strong><u>Formation et Sensibilisation :</u></strong> L'organisation a peut-être mis en place des formations et des campagnes de sensibilisation
+                        pour informer les employés sur les bonnes pratiques de sobriété numérique.
+                    </li>
+                </ul>
+            </div>
+            <div class="response" id="response4">
+                <p>4</p>
+            </div>
+            <div class="response" id="response5">
+                <p>5</p>
+            </div>
+            <div class="scroll-btns">
+                <button class="scroll-btn" onclick="scrollResponses(-1)">Précédent</button>
+                <span id="counter">1/5</span>
+                <button class="scroll-btn" onclick="scrollResponses(1)">Suivant</button>
+            </div>
+        </div>
+
+        <script>
+            let currentResponse = 1;
+
+            function scrollResponses(direction) {
+                const responses = document.querySelectorAll(".container .response");
+                currentResponse += direction;
+
+                if (currentResponse < 1) {
+                    currentResponse = responses.length;
+                } else if (currentResponse > responses.length) {
+                    currentResponse = 1;
+                }
+
+                responses.forEach((response) => response.classList.remove("active"));
+                responses[currentResponse - 1].classList.add("active");
+
+                document.getElementById("counter").innerText = `${currentResponse}/${responses.length}`;
+            }
+        </script>
+    </body>
+</html>
