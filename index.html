@@ -14,6 +14,18 @@
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
+                line-height: 1.5;
+                position: relative;
+            }
+
+            .tag {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
             }
 
             .container {
@@ -24,6 +36,8 @@
                 max-width: 600px;
                 width: 100%;
                 text-align: left;
+                height: 60vh;
+                position: relative;
             }
 
             h1 {
@@ -50,7 +64,9 @@
             .scroll-btns {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 20px;
+                position: absolute;
+                bottom: 20px;
+                width: 90%;
             }
 
             .scroll-btn {
@@ -64,6 +80,10 @@
         </style>
     </head>
     <body>
+        <div class="tag">
+            <h1>Matthieu Roman</h1>
+            <p>Étudiant en alternance à l'Efrei Paris</p>
+        </div>
         <div class="container">
             <div class="response active" id="response1">
                 <h1>Question 1</h1>
@@ -105,6 +125,14 @@
                         personnes en recherche) ?
                     </i>
                 </p>
+                <ul>
+                    <li>
+                        Je vais mettre en place des mécanismes de mise en cache efficaces pour réduire le besoin de requêtes fréquentes au serveur, améliorant ainsi les
+                        performances tout en économisant des ressources.
+                    </li>
+                    <li>Je vais rassembler les script css dans les fichiers html afin d'éviter d'ajouter trop de fichiers dans le serveur</li>
+                    <li>Je vais limiter mon utilisation de photos, et si j'en utilise, je vais essayer de réduire le taille un maximum</li>
+                </ul>
             </div>
             <div class="response" id="response3">
                 <h1>Question 3</h1>
@@ -124,11 +152,11 @@
                         l'utilisation des serveurs, réduire le nombre d'équipements physiques et diminuer la consommation énergétique.
                     </li>
                     <li>
-                        <strong><u>Utilisation de Services Cloud :</u></strong> La transition vers des services cloud peut être une initiative pour externaliser certains
-                        services et optimiser les ressources, permettant une meilleure élasticité et une consommation plus efficace.
+                        <strong><u>Utilisation de Services Cloud :</u></strong> Nous avons réaliser une transition vers les services cloud il y a environ 5 ans pour
+                        externaliser certains services et optimiser les ressources, permettant une meilleure élasticité et une consommation plus efficace.
                     </li>
                     <li>
-                        <strong><u>Développement Responsable :</u></strong> L'organisation a peut-être intégré des pratiques de développement durable, telles que
+                        <strong><u>Développement Responsable :</u></strong> Nous avons également intégrer des pratiques de développement durable, telles que
                         l'optimisation du code, la mise en cache des données, et l'utilisation de bibliothèques ou frameworks économes en ressources.
                     </li>
                     <li>
@@ -137,20 +165,31 @@
                                 Politique d'Achats Durables :
                             </ul></strong
                         >
-                        Elle a peut-être adopté une politique d'achats responsables en favorisant les équipements et services écoresponsables, et en intégrant des
-                        critères de sobriété numérique dans les appels d'offres.
+                        Nous avons optés pour une politique d'achats responsables en favorisant les équipements et services écoresponsables, et en intégrant des critères
+                        de sobriété numérique dans les appels d'offres.
                     </li>
                     <li>
-                        <strong><u>Formation et Sensibilisation :</u></strong> L'organisation a peut-être mis en place des formations et des campagnes de sensibilisation
+                        <strong><u>Formation et Sensibilisation :</u></strong> Des formations on étés mise en place des formations et des campagnes de sensibilisation
                         pour informer les employés sur les bonnes pratiques de sobriété numérique.
                     </li>
                 </ul>
             </div>
             <div class="response" id="response4">
-                <p>4</p>
+                <h1>Question 4</h1>
+                <p><i> Comment imaginez vous le numérique en 2050 </i></p>
+                <ul>
+                    <li>
+                        En 2050, je pense que le numérique aura explosé. Les ordinateurs pourront résoudre des tâches d'une complexité extrême. Je pense qu'absolument
+                        tout sera connecté, nos maisons, nos voitures ! J'espère que ça rendra nos villes plus intelligentes et on pourra économiser de l'énergie.
+                        L'informatique quantique sera certainement démocratisée et on pourra faire des calculs encore plus complexes et bien plus rapidement. Les
+                        interfaces directes avec le cerveau et la machine seront certainement développées et on pourra contrôler ces dernières par la pensée. Je pense
+                        également que la durabilité sera au coeur des préoccupations et que les entreprises seront obligées de s'adapter à cette nouvelle donne.
+                    </li>
+                </ul>
             </div>
             <div class="response" id="response5">
-                <p>5</p>
+                <h1>Question 5</h1>
+                <p>J'espère que mon site vous plait !!</p>
             </div>
             <div class="scroll-btns">
                 <button class="scroll-btn" onclick="scrollResponses(-1)">Précédent</button>
